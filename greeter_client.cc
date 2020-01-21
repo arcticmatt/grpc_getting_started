@@ -90,9 +90,11 @@ class GreeterClient {
 };
 
 int main(int argc, char** argv) {
-  std::string address = "0.0.0.0";
+  std::string address = "localhost";
   std::string port = "50051";
   std::string server_address = address + ":" + port;
+  std::cout << "Client querying server address: " << server_address << std::endl;
+
 
   // Instantiate the client. It requires a channel, out of which the actual RPCs
   // are created. This channel models a connection to an endpoint (in this case,
