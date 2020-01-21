@@ -45,7 +45,7 @@ cc_binary(
     defines = ["BAZEL_BUILD"],
     deps = [
         ":helloworld_cc_grpc",
-        # http_archive made this target available for binding
+        # http_archive made this label available for binding
         "@com_github_grpc_grpc//:grpc++",
     ],
 )
@@ -56,7 +56,7 @@ cc_binary(
     defines = ["BAZEL_BUILD"],
     deps = [
         ":helloworld_cc_grpc",
-        # http_archive made this target available for binding
+        # http_archive made this label available for binding
         "@com_github_grpc_grpc//:grpc++",
     ],
 )
